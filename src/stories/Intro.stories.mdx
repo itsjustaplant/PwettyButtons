@@ -1,0 +1,147 @@
+import {Meta, Canvas, ArgsTable} from '@storybook/addon-docs/blocks';
+import Button from "../components/ButtonContainer/Button";
+
+<Meta title="Intro" component={Button} />
+
+
+# Pretty Buttons
+Pretty Buttons is a component library which aims to design good-looking cute **uwu** lil buttons.
+
+
+export const Template = (args) => <Button {...args} />
+const ButtonArgsTypes = {
+    title: 'Default Button',
+    description: 'This is a button',
+    component: Button,
+    args: {
+        variant: 'default'
+    },
+    argTypes: {
+        variant: {
+            table: {disable: true}
+        },
+        startIcon: {
+            table: {disable: true}
+        },
+        endIcon: {
+            table: {disable: true}
+        },
+        onClick: {
+            table: {disable: true}
+        },
+        color: {
+            options: ['default', 'primary', 'secondary', 'danger'],
+            control: {type: 'select'},
+            description: 'Adjust color of the button',
+            table: {
+                type: {summary: 'string'},
+                defaultValue: {summary: 'default'}
+            }
+        },
+        size:{
+            options: ['sm', 'md', 'lg'],
+            control: {type: 'select'},
+            description: 'Adjust the size',
+            table: {
+                type: {summary: 'string'},
+                defaultValue: {summary: 'md'}
+            }
+        },
+        disabled: {
+            options: [true, false],
+            control: {type: 'radio'},
+            description: 'Toggle button ability',
+            table: {
+                type: {summary: 'bool'},
+                defaultValue: {summary: false}
+            }
+        },
+        disableShadow: {
+            options: [true, false],
+            control: {type: 'radio'},
+            description: 'Toggle button shadow',
+            table: {
+                type: {summary: 'bool'},
+                defaultValue: {summary: false}
+            }
+        },
+        text: {
+            control: {type: 'text'},
+            description: 'Label of the button',
+            table: {
+                type: {summary: 'string'},
+                defaultValue: {summary: "Default"}
+            }
+        }
+    }
+};
+
+<Button/>
+<ArgsTable argTypes = {ButtonArgsTypes} of={Button}/>
+
+## Customizing
+These pretty buttons can be customized by their variant, size, color, shadow, and you can even add icons to them.
+
+### Variant
+Let's start with button variants. There are three variants default, text and outline.
+<Canvas>
+    <Button variant='default'>Default</Button>
+    <Button variant='text'>Text</Button>
+    <Button variant='outline'>Outline</Button>
+</Canvas>
+
+### Size
+There are three size options `sm`, `md` and `lg`.
+<Canvas>
+    <Button size='sm'>Small</Button>
+    <Button size='md'>Medium</Button>
+    <Button size='lg'>Large</Button>
+</Canvas>
+
+### Color
+You can only customize `default` button by its color.
+<Canvas>
+    <Button color='default'>Default</Button>
+    <Button color='primary'>Primary</Button>
+    <Button color='secondary'>Secondary</Button>
+    <Button color='danger'>Danger</Button>
+</Canvas>
+
+### Shadow
+You can disable shadow tih `disableShadow` flag.
+<Canvas>
+    <Button>Default</Button>
+    <Button disableShadow>Shadowless</Button>
+</Canvas>
+
+### Ability
+You can disable shadow with `disabled` flag. <br/>
+**You can only disable `default` and `text` buttons. If you disable `outline` button it will turn itself into `default` button.**
+<Canvas>
+    <Button>Enabled default</Button>
+    <Button variant='text'>Enabled text</Button>
+    <Button disabled>Disabled default</Button>
+    <Button variant='text' disabled>Disabled default</Button>
+    <Button variant='outline' disabled>Disabled default</Button>
+</Canvas>
+
+### Icons
+#### Adding icons to start
+<Canvas>
+    <Button startIcon='local_grocery_store' />
+</Canvas>
+
+#### Adding icons to end
+Or you can add icons at the end.
+<Canvas>
+    <Button endIcon='shop' />
+</Canvas>
+
+#### Customizing icons
+Icons will adopt the best color.
+<Canvas>
+    <Button color='default' startIcon='grass' />
+    <Button color='primary' startIcon='grass' />
+    <Button color='primary' startIcon='grass' />
+    <Button color='danger' startIcon='grass' />
+</Canvas>

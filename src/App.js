@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import Button from "./components/ButtonContainer/Button";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function handleClick(){
+        console.log("clicked")
 }
 
+function App() {
+    return (
+        <div className="App">
+            <Button onClick={handleClick} color="primary" startIcon="local_grocery_store"/>
+        </div>
+    );
+}
 export default App;
