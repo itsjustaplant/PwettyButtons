@@ -9,7 +9,7 @@ function handleClick(){
 function App() {
     return (
         <div className="App">
-            <Button onClick={handleClick} color="primary" startIcon="local_grocery_store"/>
+            <Button onClick={handleClick} color="primary" startIcon="local_grocery_store" endIcon="local_grocery_store"/>
         </div>
     );
 }

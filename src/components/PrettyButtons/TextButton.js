@@ -1,15 +1,16 @@
-import styled from "styled-components"
+/* eslint-disable max-len */
+import styled from 'styled-components';
 
 const PaddingTop = {
-    sm: "6px",
-    md: "8px",
-    lg: "11px"
+  sm: '6px',
+  md: '8px',
+  lg: '11px',
 };
 const PaddingSide = {
-    sm: "12px",
-    md: "16px",
-    lg: "22px"
-}
+  sm: '12px',
+  md: '16px',
+  lg: '22px',
+};
 
 export const TextButton = styled.button`
     font-size: 14px;
@@ -19,7 +20,7 @@ export const TextButton = styled.button`
         line-height: 20px;
         outline: none;
         border: none;
-        padding: ${props => (PaddingTop[props.specs.size])} ${props => (PaddingSide[props.specs.size])};
+        padding: ${(props) => (PaddingTop[props.specs.size])} ${(props) => (PaddingSide[props.specs.size])};
         border-radius: 6px;
         color: #3D5AFE;
         background-color: transparent;
@@ -27,4 +28,4 @@ export const TextButton = styled.button`
         :hover, :focus{
             background-color: rgba(41, 98, 255, 0.1);
         }
-    `
+    `;

@@ -8,6 +8,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.24.0",
     "material-ui-icons": "^1.0.0-beta.36",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -74,6 +76,8 @@
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9",
     "@storybook/theming": "^6.2.9",
-    "chromatic": "^5.9.0"
+    "chromatic": "^5.9.0",
+    "eslint": "^7.28.0",
+    "react-test-renderer": "^17.0.2"
   }
 }

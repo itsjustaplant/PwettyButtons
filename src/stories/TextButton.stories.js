@@ -1,84 +1,84 @@
-import React from "react";
+import React from 'react';
 
-import Button from "../components/ButtonContainer/Button";
+import Button from '../components/ButtonContainer/Button';
 
 export default {
-    title: 'Text Button',
-    component: Button,
-    description: {summary: 'Sto'},
-    args: {
-        variant: 'text',
+  title: 'Text Button',
+  component: Button,
+  description: {summary: 'Sto'},
+  args: {
+    variant: 'text',
+  },
+  argTypes: {
+    variant: {
+      table: {disable: true},
     },
-    argTypes: {
-        variant: {
-            table: {disable: true}
-        },
-        startIcon: {
-            table: {disable: true}
-        },
-        endIcon: {
-            table: {disable: true}
-        },
-        disableShadow: {
-            table: {disable: true}
-        },
-        color: {
-            table: {disable: true}
-        },
-        onClick: {
-            table: {disable: true}
-        },
-        size: {
-            options: ['sm', 'md', 'lg'],
-            control: {type: 'select'},
-            description: 'Adjust the size',
-            table: {
-                type: {summary: 'string'},
-                defaultValue: {summary: 'md'}
-            }
-        },
-        disabled: {
-            options: [true, false],
-            control: {type: 'radio'},
-            description: 'Toggle button shadow',
-            table: {
-                type: {summary: 'bool'},
-                defaultValue: {summary: false}
-            }
-        },
-        text: {
-            control: {type: 'text'},
-            description: 'Label of the button',
-            table: {
-                type: {summary: 'string'},
-                defaultValue: {summary: "Default"}
-            }
-        }
-    }
-}
+    startIcon: {
+      table: {disable: true},
+    },
+    endIcon: {
+      table: {disable: true},
+    },
+    disableShadow: {
+      table: {disable: true},
+    },
+    color: {
+      table: {disable: true},
+    },
+    onClick: {
+      table: {disable: true},
+    },
+    size: {
+      options: ['sm', 'md', 'lg'],
+      control: {type: 'select'},
+      description: 'Adjust the size',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: 'md'},
+      },
+    },
+    disabled: {
+      options: [true, false],
+      control: {type: 'radio'},
+      description: 'Toggle button shadow',
+      table: {
+        type: {summary: 'bool'},
+        defaultValue: {summary: false},
+      },
+    },
+    text: {
+      control: {type: 'text'},
+      description: 'Label of the button',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: 'Default'},
+      },
+    },
+  },
+};
 
-const Story = (args) => <Button {...args}/>
+const Story = (args) => <Button {...args}/>;
 
-export const Text = Story.bind({})
-export const Small = Story.bind({})
-export const Medium = Story.bind({})
-export const Large = Story.bind({})
-export const Disabled = Story.bind({})
+export const Text = Story.bind({});
+export const Small = Story.bind({});
+export const Medium = Story.bind({});
+export const Large = Story.bind({});
+export const Disabled = Story.bind({});
 
-Small.storyName = 'Small Text'
-Medium.storyName = 'Medium Text'
-Large.storyName = 'Large Text'
-Disabled.storyName = 'Disabled Text'
+Small.storyName = 'Small Text';
+Medium.storyName = 'Medium Text';
+Large.storyName = 'Large Text';
+Disabled.storyName = 'Disabled Text';
 
 Small.args = {
-    size: 'sm'
-}
+  size: 'sm',
+};
 Medium.args = {
-    size: 'md'
-}
+  size: 'md',
+};
 Large.args = {
-    size: 'lg'
-}
+  size: 'lg',
+};
 Disabled.args = {
-    disabled: true
-}
+  disabled: true,
+};
