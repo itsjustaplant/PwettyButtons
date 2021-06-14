@@ -43,7 +43,7 @@ export default class Button extends React.Component {
     } else {
       switch (this.props.variant) {
         default:
-          button = <DefaultButton onClick={this.props.onClick} specs={childProps}>
+          button = <DefaultButton data-testid="default_button" onClick={this.props.onClick} specs={childProps}>
             <span style={{display: startIconDisplay}} className="material-icons-outlined startIcon">
               {this.props.startIcon}
             </span>
@@ -57,7 +57,7 @@ export default class Button extends React.Component {
           button = <OutlineButton onClick={this.props.onClick} specs={childProps}>{defaultText}</OutlineButton>;
           break;
         case 'text':
-          button = <TextButton onClick={this.props.onClick} specs={childProps}>{defaultText}</TextButton>;
+          button = <TextButton data-testid="text_button" onClick={this.props.onClick} specs={childProps}>{defaultText}</TextButton>;
       }
     }
     return (
