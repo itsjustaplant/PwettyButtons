@@ -4,7 +4,6 @@ export default create({
     base: 'light',
     app: 'light',
 
-
     appBg: '#fafafa',
     appContentBg: '#fafafa',
     fontBase: '"Open Sans", sans-serif',
