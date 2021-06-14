@@ -2,11 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {DefaultButton} from '../PrettyButtons/DefaultButton';
-import {OutlineButton} from '../PrettyButtons/OutlineButton';
-import {DisabledDefaultButton} from '../PrettyButtons/DisabledDefaultButton';
-import {TextButton} from '../PrettyButtons/TextButton';
-import {DisabledText} from '../PrettyButtons/DisabledText';
+import {DefaultButton} from './PrettyButtons/DefaultButton';
+import {OutlineButton} from './PrettyButtons/OutlineButton';
+import {DisabledDefaultButton} from './PrettyButtons/DisabledDefaultButton';
+import {TextButton} from './PrettyButtons/TextButton';
+import {DisabledText} from './PrettyButtons/DisabledText';
 
 export default class Button extends React.Component {
   render() {
