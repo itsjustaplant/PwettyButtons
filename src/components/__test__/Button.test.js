@@ -2,11 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {cleanup, fireEvent, render} from '@testing-library/react';
-import Enzyme from 'enzyme';
+import Enzyme, {shallow} from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-
-Enzyme.configure({adapter: new Adapter()});
-import {shallow} from 'enzyme';
 
 import Button from '../Button';
 

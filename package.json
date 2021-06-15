@@ -1,6 +1,8 @@
 {
-  "name": "prettybuttons",
+  "name": "pwettybuttons",
   "version": "0.1.0",
+  "description": "Small pwetty uwu buttons",
+  "author": "justaplant",
   "private": true,
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.14.5",
@@ -19,6 +21,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "rollup": "^2.51.2",
     "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
