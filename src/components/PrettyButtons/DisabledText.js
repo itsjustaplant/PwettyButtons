@@ -13,7 +13,7 @@ const PaddingSide = {
 };
 
 export const DisabledText = styled.button`
-    font-size: 14px;
+        font-size: 14px;
         font-weight: 500;
         font-family: 'Noto Sans JP', sans-serif;
         text-align: center;
