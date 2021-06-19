@@ -5,7 +5,7 @@ import {cleanup, fireEvent, render} from '@testing-library/react';
 import Enzyme, {shallow} from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
-import Button from '../Button';
+import {Button} from '../Button';
 
 afterEach(cleanup);
 Enzyme.configure({adapter: new Adapter()});
