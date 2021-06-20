@@ -1,8 +1,10 @@
 {
   "name": "@justaplant/pwettybuttons",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Small pwetty uwu buttons",
   "author": "justaplant",
+  "homepage": "https://github.com/itsjustaplant/PwettyButtons",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
