@@ -3,6 +3,8 @@
   "version": "1.0.8",
   "description": "Small pwetty uwu buttons",
   "author": "justaplant",
+  "homepage": "https://github.com/itsjustaplant/PwettyButtons",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
